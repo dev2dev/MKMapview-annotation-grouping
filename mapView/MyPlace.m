@@ -35,10 +35,4 @@
 	return self;
 }
 
--(void)setRepresenting:(int)rep{
-    representing=rep;
-}
--(int)getRepresenting{
-    return representing;
-}
 @end

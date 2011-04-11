@@ -14,7 +14,6 @@
 	NSString *currentSubTitle;
 	NSString *currentTitle;
     BOOL show_on_map;
-    int representing;
 }
 
 
@@ -28,8 +27,7 @@
 -(id)initWithCoordinate:(CLLocationCoordinate2D) c;
 -(void)setShow:(NSNumber *)show;
 -(CLLocationCoordinate2D)getCoordinate;
--(void)setRepresenting:(int)rep;
--(int)getRepresenting;
+
 
 
 @end
