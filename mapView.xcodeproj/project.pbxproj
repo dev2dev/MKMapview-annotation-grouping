@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC7B3593135301AD00AE3615 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B3592135301AD00AE3615 /* UIKit.framework */; };
+		EC7B3595135301AD00AE3615 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B3594135301AD00AE3615 /* Foundation.framework */; };
+		EC7B3597135301AD00AE3615 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B3596135301AD00AE3615 /* CoreGraphics.framework */; };
+		EC7B359D135301AD00AE3615 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC7B359B135301AD00AE3615 /* InfoPlist.strings */; };
+		EC7B35A0135301AD00AE3615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7B359F135301AD00AE3615 /* main.m */; };
+		EC7B35A3135301AD00AE3615 /* mapViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7B35A2135301AD00AE3615 /* mapViewAppDelegate.m */; };
+		EC7B35A6135301AD00AE3615 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7B35A4135301AD00AE3615 /* MainWindow.xib */; };
+		EC7B35A9135301AD00AE3615 /* mapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7B35A8135301AD00AE3615 /* mapViewViewController.m */; };
+		EC7B35AC135301AD00AE3615 /* mapViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7B35AA135301AD00AE3615 /* mapViewViewController.xib */; };
+		EC7B35B3135301AD00AE3615 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B3592135301AD00AE3615 /* UIKit.framework */; };
+		EC7B35B4135301AD00AE3615 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B3594135301AD00AE3615 /* Foundation.framework */; };
+		EC7B35B5135301AD00AE3615 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B3596135301AD00AE3615 /* CoreGraphics.framework */; };
+		EC7B35BD135301AD00AE3615 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC7B35BB135301AD00AE3615 /* InfoPlist.strings */; };
+		EC7B35C0135301AD00AE3615 /* mapViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = EC7B35BF135301AD00AE3615 /* mapViewTests.h */; };
+		EC7B35C2135301AD00AE3615 /* mapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7B35C1135301AD00AE3615 /* mapViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC7B35B6135301AD00AE3615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7B3585135301AD00AE3615 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7B358D135301AD00AE3615;
+			remoteInfo = mapView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC7B358E135301AD00AE3615 /* mapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7B3592135301AD00AE3615 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC7B3594135301AD00AE3615 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC7B3596135301AD00AE3615 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC7B359A135301AD00AE3615 /* mapView-Info.plist */ = {isa = PBXFileReference; path = "mapView-Info.plist"; sourceTree = "<group>"; };
+		EC7B359C135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC7B359E135301AD00AE3615 /* mapView-Prefix.pch */ = {isa = PBXFileReference; path = "mapView-Prefix.pch"; sourceTree = "<group>"; };
+		EC7B359F135301AD00AE3615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC7B35A1135301AD00AE3615 /* mapViewAppDelegate.h */ = {isa = PBXFileReference; path = mapViewAppDelegate.h; sourceTree = "<group>"; };
+		EC7B35A2135301AD00AE3615 /* mapViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapViewAppDelegate.m; sourceTree = "<group>"; };
+		EC7B35A5135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		EC7B35A7135301AD00AE3615 /* mapViewViewController.h */ = {isa = PBXFileReference; path = mapViewViewController.h; sourceTree = "<group>"; };
+		EC7B35A8135301AD00AE3615 /* mapViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapViewViewController.m; sourceTree = "<group>"; };
+		EC7B35AB135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mapViewViewController.xib; sourceTree = "<group>"; };
+		EC7B35B2135301AD00AE3615 /* mapViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7B35BA135301AD00AE3615 /* mapViewTests-Info.plist */ = {isa = PBXFileReference; path = "mapViewTests-Info.plist"; sourceTree = "<group>"; };
+		EC7B35BC135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC7B35BE135301AD00AE3615 /* mapViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "mapViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		EC7B35BF135301AD00AE3615 /* mapViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapViewTests.h; sourceTree = "<group>"; };
+		EC7B35C1135301AD00AE3615 /* mapViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC7B358B135301AD00AE3615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7B3593135301AD00AE3615 /* UIKit.framework in Frameworks */,
+				EC7B3595135301AD00AE3615 /* Foundation.framework in Frameworks */,
+				EC7B3597135301AD00AE3615 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7B35AE135301AD00AE3615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7B35B3135301AD00AE3615 /* UIKit.framework in Frameworks */,
+				EC7B35B4135301AD00AE3615 /* Foundation.framework in Frameworks */,
+				EC7B35B5135301AD00AE3615 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC7B3583135301AD00AE3615 = {
+			isa = PBXGroup;
+			children = (
+				EC7B3598135301AD00AE3615 /* mapView */,
+				EC7B35B8135301AD00AE3615 /* mapViewTests */,
+				EC7B3591135301AD00AE3615 /* Frameworks */,
+				EC7B358F135301AD00AE3615 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC7B358F135301AD00AE3615 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B358E135301AD00AE3615 /* mapView.app */,
+				EC7B35B2135301AD00AE3615 /* mapViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC7B3591135301AD00AE3615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B3592135301AD00AE3615 /* UIKit.framework */,
+				EC7B3594135301AD00AE3615 /* Foundation.framework */,
+				EC7B3596135301AD00AE3615 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC7B3598135301AD00AE3615 /* mapView */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B35A1135301AD00AE3615 /* mapViewAppDelegate.h */,
+				EC7B35A2135301AD00AE3615 /* mapViewAppDelegate.m */,
+				EC7B35A4135301AD00AE3615 /* MainWindow.xib */,
+				EC7B35A7135301AD00AE3615 /* mapViewViewController.h */,
+				EC7B35A8135301AD00AE3615 /* mapViewViewController.m */,
+				EC7B35AA135301AD00AE3615 /* mapViewViewController.xib */,
+				EC7B3599135301AD00AE3615 /* Supporting Files */,
+			);
+			path = mapView;
+			sourceTree = "<group>";
+		};
+		EC7B3599135301AD00AE3615 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B359A135301AD00AE3615 /* mapView-Info.plist */,
+				EC7B359B135301AD00AE3615 /* InfoPlist.strings */,
+				EC7B359E135301AD00AE3615 /* mapView-Prefix.pch */,
+				EC7B359F135301AD00AE3615 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC7B35B8135301AD00AE3615 /* mapViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B35BF135301AD00AE3615 /* mapViewTests.h */,
+				EC7B35C1135301AD00AE3615 /* mapViewTests.m */,
+				EC7B35B9135301AD00AE3615 /* Supporting Files */,
+			);
+			path = mapViewTests;
+			sourceTree = "<group>";
+		};
+		EC7B35B9135301AD00AE3615 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC7B35BA135301AD00AE3615 /* mapViewTests-Info.plist */,
+				EC7B35BB135301AD00AE3615 /* InfoPlist.strings */,
+				EC7B35BE135301AD00AE3615 /* mapViewTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC7B358D135301AD00AE3615 /* mapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7B35C5135301AD00AE3615 /* Build configuration list for PBXNativeTarget "mapView" */;
+			buildPhases = (
+				EC7B358A135301AD00AE3615 /* Sources */,
+				EC7B358B135301AD00AE3615 /* Frameworks */,
+				EC7B358C135301AD00AE3615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mapView;
+			productName = mapView;
+			productReference = EC7B358E135301AD00AE3615 /* mapView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC7B35B1135301AD00AE3615 /* mapViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7B35C8135301AD00AE3615 /* Build configuration list for PBXNativeTarget "mapViewTests" */;
+			buildPhases = (
+				EC7B35AD135301AD00AE3615 /* Sources */,
+				EC7B35AE135301AD00AE3615 /* Frameworks */,
+				EC7B35AF135301AD00AE3615 /* Resources */,
+				EC7B35B0135301AD00AE3615 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7B35B7135301AD00AE3615 /* PBXTargetDependency */,
+			);
+			name = mapViewTests;
+			productName = mapViewTests;
+			productReference = EC7B35B2135301AD00AE3615 /* mapViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC7B3585135301AD00AE3615 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = PetMinuta;
+			};
+			buildConfigurationList = EC7B3588135301AD00AE3615 /* Build configuration list for PBXProject "mapView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC7B3583135301AD00AE3615;
+			productRefGroup = EC7B358F135301AD00AE3615 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC7B358D135301AD00AE3615 /* mapView */,
+				EC7B35B1135301AD00AE3615 /* mapViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC7B358C135301AD00AE3615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7B359D135301AD00AE3615 /* InfoPlist.strings in Resources */,
+				EC7B35A6135301AD00AE3615 /* MainWindow.xib in Resources */,
+				EC7B35AC135301AD00AE3615 /* mapViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7B35AF135301AD00AE3615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7B35BD135301AD00AE3615 /* InfoPlist.strings in Resources */,
+				EC7B35C0135301AD00AE3615 /* mapViewTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC7B35B0135301AD00AE3615 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC7B358A135301AD00AE3615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7B35A0135301AD00AE3615 /* main.m in Sources */,
+				EC7B35A3135301AD00AE3615 /* mapViewAppDelegate.m in Sources */,
+				EC7B35A9135301AD00AE3615 /* mapViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7B35AD135301AD00AE3615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7B35C2135301AD00AE3615 /* mapViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC7B35B7135301AD00AE3615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7B358D135301AD00AE3615 /* mapView */;
+			targetProxy = EC7B35B6135301AD00AE3615 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC7B359B135301AD00AE3615 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7B359C135301AD00AE3615 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC7B35A4135301AD00AE3615 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7B35A5135301AD00AE3615 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		EC7B35AA135301AD00AE3615 /* mapViewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7B35AB135301AD00AE3615 /* en */,
+			);
+			name = mapViewViewController.xib;
+			sourceTree = "<group>";
+		};
+		EC7B35BB135301AD00AE3615 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7B35BC135301AD00AE3615 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC7B35C3135301AD00AE3615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC7B35C4135301AD00AE3615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		EC7B35C6135301AD00AE3615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapView/mapView-Prefix.pch";
+				INFOPLIST_FILE = "mapView/mapView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC7B35C7135301AD00AE3615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapView/mapView-Prefix.pch";
+				INFOPLIST_FILE = "mapView/mapView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EC7B35C9135301AD00AE3615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mapView.app/mapView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapViewTests/mapViewTests-Prefix.pch";
+				INFOPLIST_FILE = "mapViewTests/mapViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EC7B35CA135301AD00AE3615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mapView.app/mapView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapViewTests/mapViewTests-Prefix.pch";
+				INFOPLIST_FILE = "mapViewTests/mapViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC7B3588135301AD00AE3615 /* Build configuration list for PBXProject "mapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7B35C3135301AD00AE3615 /* Debug */,
+				EC7B35C4135301AD00AE3615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7B35C5135301AD00AE3615 /* Build configuration list for PBXNativeTarget "mapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7B35C6135301AD00AE3615 /* Debug */,
+				EC7B35C7135301AD00AE3615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC7B35C8135301AD00AE3615 /* Build configuration list for PBXNativeTarget "mapViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7B35C9135301AD00AE3615 /* Debug */,
+				EC7B35CA135301AD00AE3615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC7B3585135301AD00AE3615 /* Project object */;
+}
