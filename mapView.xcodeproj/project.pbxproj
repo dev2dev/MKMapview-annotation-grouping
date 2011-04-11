@@ -22,6 +22,9 @@
 		EC7B35BD135301AD00AE3615 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC7B35BB135301AD00AE3615 /* InfoPlist.strings */; };
 		EC7B35C0135301AD00AE3615 /* mapViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = EC7B35BF135301AD00AE3615 /* mapViewTests.h */; };
 		EC7B35C2135301AD00AE3615 /* mapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7B35C1135301AD00AE3615 /* mapViewTests.m */; };
+		EC7B35CC1353026E00AE3615 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B35CB1353026E00AE3615 /* MapKit.framework */; };
+		EC7B35D2135302D600AE3615 /* MyPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7B35D1135302D600AE3615 /* MyPlace.m */; };
+		EC7B35D4135306CE00AE3615 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7B35D3135306CE00AE3615 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +42,26 @@
 		EC7B3592135301AD00AE3615 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC7B3594135301AD00AE3615 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC7B3596135301AD00AE3615 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EC7B359A135301AD00AE3615 /* mapView-Info.plist */ = {isa = PBXFileReference; path = "mapView-Info.plist"; sourceTree = "<group>"; };
+		EC7B359A135301AD00AE3615 /* mapView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mapView-Info.plist"; sourceTree = "<group>"; };
 		EC7B359C135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EC7B359E135301AD00AE3615 /* mapView-Prefix.pch */ = {isa = PBXFileReference; path = "mapView-Prefix.pch"; sourceTree = "<group>"; };
+		EC7B359E135301AD00AE3615 /* mapView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mapView-Prefix.pch"; sourceTree = "<group>"; };
 		EC7B359F135301AD00AE3615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EC7B35A1135301AD00AE3615 /* mapViewAppDelegate.h */ = {isa = PBXFileReference; path = mapViewAppDelegate.h; sourceTree = "<group>"; };
+		EC7B35A1135301AD00AE3615 /* mapViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapViewAppDelegate.h; sourceTree = "<group>"; };
 		EC7B35A2135301AD00AE3615 /* mapViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapViewAppDelegate.m; sourceTree = "<group>"; };
 		EC7B35A5135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		EC7B35A7135301AD00AE3615 /* mapViewViewController.h */ = {isa = PBXFileReference; path = mapViewViewController.h; sourceTree = "<group>"; };
+		EC7B35A7135301AD00AE3615 /* mapViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapViewViewController.h; sourceTree = "<group>"; };
 		EC7B35A8135301AD00AE3615 /* mapViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapViewViewController.m; sourceTree = "<group>"; };
 		EC7B35AB135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mapViewViewController.xib; sourceTree = "<group>"; };
 		EC7B35B2135301AD00AE3615 /* mapViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7B35BA135301AD00AE3615 /* mapViewTests-Info.plist */ = {isa = PBXFileReference; path = "mapViewTests-Info.plist"; sourceTree = "<group>"; };
+		EC7B35BA135301AD00AE3615 /* mapViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mapViewTests-Info.plist"; sourceTree = "<group>"; };
 		EC7B35BC135301AD00AE3615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EC7B35BE135301AD00AE3615 /* mapViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "mapViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		EC7B35BE135301AD00AE3615 /* mapViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mapViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		EC7B35BF135301AD00AE3615 /* mapViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapViewTests.h; sourceTree = "<group>"; };
 		EC7B35C1135301AD00AE3615 /* mapViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapViewTests.m; sourceTree = "<group>"; };
+		EC7B35CB1353026E00AE3615 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EC7B35D0135302D600AE3615 /* MyPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlace.h; sourceTree = "<group>"; };
+		EC7B35D1135302D600AE3615 /* MyPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlace.m; sourceTree = "<group>"; };
+		EC7B35D3135306CE00AE3615 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7B35D4135306CE00AE3615 /* CoreLocation.framework in Frameworks */,
+				EC7B35CC1353026E00AE3615 /* MapKit.framework in Frameworks */,
 				EC7B3593135301AD00AE3615 /* UIKit.framework in Frameworks */,
 				EC7B3595135301AD00AE3615 /* Foundation.framework in Frameworks */,
 				EC7B3597135301AD00AE3615 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +93,8 @@
 		EC7B3583135301AD00AE3615 = {
 			isa = PBXGroup;
 			children = (
+				EC7B35D3135306CE00AE3615 /* CoreLocation.framework */,
+				EC7B35CB1353026E00AE3615 /* MapKit.framework */,
 				EC7B3598135301AD00AE3615 /* mapView */,
 				EC7B35B8135301AD00AE3615 /* mapViewTests */,
 				EC7B3591135301AD00AE3615 /* Frameworks */,
@@ -120,6 +131,8 @@
 				EC7B35A8135301AD00AE3615 /* mapViewViewController.m */,
 				EC7B35AA135301AD00AE3615 /* mapViewViewController.xib */,
 				EC7B3599135301AD00AE3615 /* Supporting Files */,
+				EC7B35D0135302D600AE3615 /* MyPlace.h */,
+				EC7B35D1135302D600AE3615 /* MyPlace.m */,
 			);
 			path = mapView;
 			sourceTree = "<group>";
@@ -266,6 +279,7 @@
 				EC7B35A0135301AD00AE3615 /* main.m in Sources */,
 				EC7B35A3135301AD00AE3615 /* mapViewAppDelegate.m in Sources */,
 				EC7B35A9135301AD00AE3615 /* mapViewViewController.m in Sources */,
+				EC7B35D2135302D600AE3615 /* MyPlace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +349,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -349,7 +363,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
