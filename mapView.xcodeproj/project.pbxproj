@@ -460,6 +460,7 @@
 				EC7B35C7135301AD00AE3615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC7B35C8135301AD00AE3615 /* Build configuration list for PBXNativeTarget "mapViewTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				EC7B35CA135301AD00AE3615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

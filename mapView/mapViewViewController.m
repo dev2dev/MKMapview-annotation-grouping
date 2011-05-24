@@ -43,8 +43,7 @@
         MyPlace *place=[[MyPlace alloc] initWithCoordinate:CLLocationCoordinate2DMake([self RandomFloatStart:42.0 end:47.0],[self RandomFloatStart:14.0 end:19.0])];
         [place setCurrentTitle:[NSString stringWithFormat:@"Place %d title",i]];
         [place setCurrentSubTitle:[NSString stringWithFormat:@"Place %d subtitle",i]];
-       // [place setShow:[NSNumber numberWithBool:TRUE]];
-            
+        [place addPlace:place];
         [tempPlaces addObject:place];
         [place release];
     
@@ -87,30 +86,24 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:(id <MKAnnotation>)annotation{
 	
-	
-	MKAnnotationView *annotationView = nil;
-	
-	static NSString *StartPinIdentifier = @"PinIdentifier";
-	MKPinAnnotationView *startPin = (id)[mV dequeueReusableAnnotationViewWithIdentifier:StartPinIdentifier];
-	if ([annotation isKindOfClass:[MKUserLocation class]]){
-		startPin = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:StartPinIdentifier] autorelease];
-        startPin.pinColor = MKPinAnnotationColorGreen;
-        startPin.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        startPin.canShowCallout = YES;
-        startPin.enabled = YES;
-	}
+    // if it's the user location, just return nil.
+    if ([annotation isKindOfClass:[MKUserLocation class]]){
+        return nil;
+    }
 	else{
+        MKAnnotationView *annotationView = nil;        
+        static NSString *StartPinIdentifier = @"PinIdentifier";
+        MKPinAnnotationView *startPin = (id)[mV dequeueReusableAnnotationViewWithIdentifier:StartPinIdentifier];
 		if (startPin == nil) {
             startPin = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:StartPinIdentifier] autorelease];
             startPin.animatesDrop = NO;
             startPin.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];            
             startPin.canShowCallout = YES;
-            startPin.pinColor = MKPinAnnotationColorRed;
             startPin.enabled = YES;
         }
-	}
-    annotationView = startPin;
-	return annotationView;
+        annotationView = startPin;
+        return annotationView;
+	}   
 }
 
 
@@ -129,7 +122,7 @@
 -(void)filterAnnotations:(NSArray *)placesToFilter{
     float latDelta=myMapView.region.span.latitudeDelta/iphoneScaleFactorLatitude;
     float longDelta=myMapView.region.span.longitudeDelta/iphoneScaleFactorLongitude;
-    
+    [placesToFilter makeObjectsPerformSelector:@selector(cleanPlaces)];
     NSMutableArray *shopsToShow=[[NSMutableArray alloc] initWithCapacity:0];
     
     for (int i=0; i<[placesToFilter count]; i++) {
@@ -142,6 +135,7 @@
             if(fabs([tempPlacemark getCoordinate].latitude-latitude) < latDelta && fabs([tempPlacemark getCoordinate].longitude-longitude)<longDelta ){
                 [myMapView removeAnnotation:checkingLocation];
                 found=TRUE;
+                [tempPlacemark addPlace:checkingLocation];
                 break;
             }
         }

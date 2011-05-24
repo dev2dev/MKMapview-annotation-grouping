@@ -13,6 +13,7 @@
     CLLocationCoordinate2D coordinate;
 	NSString *currentSubTitle;
 	NSString *currentTitle;
+    NSMutableArray *places;
 }
 
 
@@ -25,7 +26,7 @@
 - (NSString *)subtitle;
 -(id)initWithCoordinate:(CLLocationCoordinate2D) c;
 -(CLLocationCoordinate2D)getCoordinate;
-
+-(void)addPlace:(MyPlace *)place;
 
 
 @end
