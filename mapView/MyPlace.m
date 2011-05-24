@@ -27,9 +27,6 @@
 -(CLLocationCoordinate2D)getCoordinate{
     return coordinate;
 }
--(void)setShow:(NSNumber *)show{
-    show_on_map=[show boolValue];
-}
 -(id)initWithCoordinate:(CLLocationCoordinate2D) c{
 	coordinate=c;
 	return self;

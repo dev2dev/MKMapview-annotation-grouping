@@ -43,7 +43,7 @@
         MyPlace *place=[[MyPlace alloc] initWithCoordinate:CLLocationCoordinate2DMake([self RandomFloatStart:42.0 end:47.0],[self RandomFloatStart:14.0 end:19.0])];
         [place setCurrentTitle:[NSString stringWithFormat:@"Place %d title",i]];
         [place setCurrentSubTitle:[NSString stringWithFormat:@"Place %d subtitle",i]];
-        [place setShow:[NSNumber numberWithBool:TRUE]];
+       // [place setShow:[NSNumber numberWithBool:TRUE]];
             
         [tempPlaces addObject:place];
         [place release];

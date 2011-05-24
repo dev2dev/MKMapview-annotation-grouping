@@ -13,7 +13,6 @@
     CLLocationCoordinate2D coordinate;
 	NSString *currentSubTitle;
 	NSString *currentTitle;
-    BOOL show_on_map;
 }
 
 
@@ -25,7 +24,6 @@
 - (NSString *)title;
 - (NSString *)subtitle;
 -(id)initWithCoordinate:(CLLocationCoordinate2D) c;
--(void)setShow:(NSNumber *)show;
 -(CLLocationCoordinate2D)getCoordinate;
 
 
