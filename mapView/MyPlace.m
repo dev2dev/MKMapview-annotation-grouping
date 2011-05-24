@@ -51,5 +51,8 @@
     places=[[NSMutableArray alloc] initWithCapacity:0];
 	return self;
 }
+-(int)placesCount{
+    return [places count];
+}
 
 @end

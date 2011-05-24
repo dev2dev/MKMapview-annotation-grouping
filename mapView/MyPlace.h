@@ -27,6 +27,6 @@
 -(id)initWithCoordinate:(CLLocationCoordinate2D) c;
 -(CLLocationCoordinate2D)getCoordinate;
 -(void)addPlace:(MyPlace *)place;
-
+-(int)placesCount;
 
 @end
